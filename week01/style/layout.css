@@ -1,70 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200&family=Mooli&family=Roboto&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-
-}
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4; /* Un gris claro para el fondo */
 }
 
-/* encabezado de la pagina*/
+/* Encabezado */
 header {
-    background-color: #333; 
+    background-color: #3b4045;
     color: white;
     padding: 20px;
-    text-align: left;
+    text-align: center;
+    font-size: 1em;
 }
 
-/* barra de inicio o como se llame */
+/* ---------------------------- Navegación */
 nav {
-    background-color: black;
-}
-
-nav ul {
-    list-style: none;
-    display: flex; /* con flexbox se alinea y esta disenada para trabajar en una dimension a la vez*/
-    justify-content: space-around;
+    background-color: #343a40;
     padding: 10px;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+
 nav ul li {
-    padding: 0 20px;
-    font-family: Montserrat;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
-    text-decoration:double;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Main container grid layout - el contenido  */
-.container { /*ya aqui estamos personalizando lo que esta dentro de la class container*/
-
-    display: grid; /*convierte el contenedor en una rejilla, disenado para trabajhar en dos dimensiones filas y columnas  */
-    grid-template-columns: 2fr 1fr; /* 2/3 for main, 1/3 for aside dimensiones de cada main container*/
-    gap: 10px;
-    padding: 20px;
-    height: 20rem;
-    background-color: #e0e0e0;
-}
-
-/* Main contenido */
+/* ------------------------- Main */
 main {
-    background-color: #ccc;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
     padding: 20px;
 }
 
-/* Aside content */
-aside {
+.about_me, .lugar, .resources {
     background-color: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer styling */
+
+.about_me img {
+    border-radius: 50%;
+    margin-left: 20px;
+    width: 100px;
+}
+
+.about_me .text {
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido se apile verticalmente */
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.lugar {
+    text-align: left;
+}
+
+.lugar img {
+    width: 50px;
+}
+
+/* ------------------------Sección de recursos */
+.resources ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.resources ul li {
+    margin-bottom: 10px;
+}
+
+.resources ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* ------------------------------- Footer */
 footer {
-    background-color: #333;
+    background-color: #343a40;
     color: white;
     text-align: center;
     padding: 20px;
