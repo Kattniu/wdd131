@@ -89,13 +89,18 @@ main {
 
 /* ------------------------------- Footer */
 footer {
-    background-color: #343a40;
+    background-color: #343a40; 
     color: white;
-    text-align: center;
-    padding: 20px;
+    text-align: center; 
+    padding: 20px; 
+    font-size: 0.9em; 
+ }
+footer p {
+    margin: 0; 
 }
+
 @media (max-width: 600px) {
     main {
-        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas :) */
     }
 }

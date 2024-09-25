@@ -26,7 +26,7 @@
                 <h2>About Me</h2>
                
                 <div class="cont">
-                    <img src="images/io.jpg" alt="photo">
+                    <img src="images/io.jpg" alt="me">
                     <p>My name is Katherine and I am passionate about web development.</p>
                 </div>
             </section>
@@ -56,5 +56,11 @@
     <footer>
         <p>©2024 🌸 Katherine Gonzales 🌸 Peru</p>
     </footer>
+
+    <script>
+        const year = new Date().getFullYear();
+        document.querySelector('footer p').innerHTML = `©${year} 🌸 Katherine Gonzales 🌸 Peru`;
+    </script>
+    
 </body>
 </html>
