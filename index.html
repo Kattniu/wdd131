@@ -49,18 +49,16 @@
                 <li><a href="#">W3 Schools</a></li>
                 <li><a href="#">Udemy</a></li>
                 <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                <script src="scripts/dates.js" defer></script>
             </ul>
         </aside>
     </div>
 
-    <footer>
-        <p>©2024 🌸 Katherine Gonzales 🌸 Peru</p>
-    </footer>
+  +<footer>
+    <p>&copy; <span id="current-year"></span> 🌸 Katherine Gonzales 🌸 </p>
+    <p class="red"><span id="current-date-time"></span></p>
 
-    <script>
-        const year = new Date().getFullYear();
-        document.querySelector('footer p').innerHTML = `©${year} 🌸 Katherine Gonzales 🌸 Peru`;
-    </script>
-    
+</footer>
+
 </body>
 </html>
