@@ -1,7 +1,7 @@
 
 @media (min-width: 768px) {
     #hamburger {
-        display: none; 
+        display: flex; 
     }
 
     nav ul {
@@ -11,12 +11,12 @@
     }
 
     nav ul li {
-        margin: 0 20px;
+        margin: 0 10px;
     }
 
     .gallery {
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 10px;
         max-width: 1200px;
         margin: 0 auto;
     }
