@@ -1,7 +1,12 @@
 
-@media (min-width: 768px) {
+@media (min-width: 750px) {
+    body {
+        background-color: rgb(212, 244, 244);
+
+    };
     #hamburger {
         display: flex; 
+
     }
 
     nav ul {
