@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book of Mormon Chapters</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <h1>Book of Mormon</h1>
+    
+  <!--Label da una descripcion para un campo de entrada en un formulario--> 
+  <!--el atributo fro="favchap" esta vinculado al campo de entrada de el id="favchap" --> 
+    <label for="favchap">Enter your favorite chapter:</label>
+   
+   <!--id="favchap es un identificador unico para que este campo que sera usdo
+   por Js para ler lo que el usuario escriba"-->
+    <input type="text" id="favchap" placeholder="Alma 5"> <!-- aqui el usuario escribira su vers-->
+   
+    <button type="submit">Add Chapter</button> <!--este es el n'¿boton donde el usuario presiona -->
+
+    <h2>Top 10 Favorite Chapters</h2>
+
+    <ul id="chapterList"></ul> <!--aqui apareceran tus capitulos fav-->
+
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>
