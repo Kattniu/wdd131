@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,200&family=Mooli&family=Roboto&display=swap');
+
 @media (min-width: 700px) {
     .container {
         position: relative;
         max-width: 1200px;
         margin: auto;
-    }
-    header{
-        font-family: "Montserrat";
     }
 
     .hero {
