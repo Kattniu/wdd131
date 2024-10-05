@@ -44,12 +44,19 @@ h2{
     text-align: center;
 }
 
+
 footer {
     background-color: var(--primary-color);
     color: var(--text-color);
     text-align: center;
     padding: 10px 0;
     font-size: 0.9rem;
+}
+footer p:first-child::after {
+    content: " 🦙"; /* El emoticono de la llamita peruana */
+    font-size: 1.5rem; /* Ajusta el tamaño del emoticono si es necesario */
+    margin-left: 5px; /* Espacio entre el nombre y el emoticono */
+    vertical-align: middle; /* Alinea el emoticono verticalmente con el texto */
 }
 ul{
     list-style-type: none;
