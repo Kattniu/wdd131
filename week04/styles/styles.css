@@ -1,0 +1,45 @@
+body{
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: beige;
+}
+header{
+    background-color:burlywood;
+    padding: 20px;
+}
+h1{
+    margin:20px
+}
+
+.container{
+    width: 100%;
+}
+
+/* Animación de desvanecimiento desde negro */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /*para que la imagen este totalmente imnvisible*/
+        background-color: black; /*el fondo sera color negro*/
+    }
+    100% {
+        opacity: 1; /*y aqui sera completamente visible */
+        background-color: transparent;
+    }
+}
+
+img{
+    display: block; /*Se utiliza display block para las imagenes con margin auto para centarlas en la pagina */
+    width: 400px;
+    height: 600px;
+    margin: 20px auto;
+    background-color: black;
+    animation: fadeIn 2s ease-out forwards;  /*la duracion de la animacion, y forwards nos asegura que la imagen parmanecera al final*/
+    opacity: 1; /*La imagen se queda visible despues de la animacion pero si pones 0 despues de la animacion seran imvisibles */
+}
+footer {
+    background-color: #d0c152; 
+    text-align: center;
+    padding: 1em;
+}

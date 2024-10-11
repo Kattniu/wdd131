@@ -44,7 +44,11 @@
         right: 10%;
     }
 
-    #weather img {
-        display: none;
+    
+    .weather li:nth-child(2)::after { /*esto inserta el icono del sol despues(after) */ 
+        content: "☀️"; /*el dos significa el segundo elemento hijo  */
+        margin-right: 10px;
+        font-size: 1rem;
     }
+    
 }

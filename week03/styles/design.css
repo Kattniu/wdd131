@@ -1,0 +1,55 @@
+body {
+    font-family: Roboto, helvetica, sans-serif; /* Tipografía general */
+}
+
+header,
+main,
+footer {
+    max-width: 760px; /* Limita el ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Línea debajo del título principal */
+}
+
+main {
+    display: grid; /* Activa Grid Layout */
+    grid-template-columns: 1fr 1fr; /* Divide en dos columnas iguales */
+}
+
+h2 {
+    color: navy; /* Color del título */
+    text-align: center; /* Alineación centrada */
+    grid-column: span 2; /* Hace que el <h2> abarque las dos columnas */
+}
+
+article p {
+    text-align: justify; /* Alineación justificada del texto del artículo */
+}
+
+.callout {
+    color: #777; /* Color del texto gris claro */
+    background-color: #702963; /* Fondo color púrpura */
+}
+
+footer {
+    margin-top: 1rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Línea encima del pie de página */
+    font-size: smaller; /* Fuente más pequeña */
+    text-align: right; /* Alineación a la derecha */
+}
+.banner {
+    padding: 1rem;
+    background-color: #eee; /* Fondo claro */
+    text-align: center; /* Centrar el texto */
+    font-size: larger; /* Aumenta el tamaño de la fuente */
+}
+@keyframes scrollText {
+    from {
+        transform: translateX(100%); /* Comienza fuera de la pantalla por la derecha */
+    }
+    to {
+        transform: translateX(-100%); /* Termina fuera de la pantalla por la izquierda */
+    }
+}
