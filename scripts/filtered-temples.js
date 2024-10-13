@@ -1,4 +1,3 @@
-// Función para mostrar/ocultar el menú de navegación en pantallas pequeñas
 function toggleMenu() {
   const navMenu = document.getElementById('nav-menu');
   navMenu.classList.toggle('show');
@@ -55,13 +54,12 @@ const temples = [
     area: 116642,
     imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   }
-  // Puedes agregar más templos si lo necesitas...
+  
 ];
 
-// Función para generar las tarjetas de los templos
 function displayTemples(templeList) {
   const templeContainer = document.getElementById('temple-container');
-  templeContainer.innerHTML = ''; // Limpiamos el contenedor antes de agregar las nuevas tarjetas
+  templeContainer.innerHTML = ''; // Limpia el contenedor
 
   templeList.forEach(temple => {
     const templeCard = document.createElement('div');
@@ -79,7 +77,7 @@ function displayTemples(templeList) {
   });
 }
 
-// Inicializamos mostrando todos los templos
+
 displayTemples(temples);
 
 // Implementar el filtrado según el clic en el menú de navegación
@@ -103,6 +101,6 @@ document.querySelector('nav').addEventListener('click', function(event) {
   }
 });
 
-// Actualizamos el año actual y la última modificación
+//  el año actual y la última modificación
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
