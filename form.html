@@ -21,11 +21,14 @@
         <!--Este atributo especifica a la URL donde se enviaran los datos del formulario -->
         <!--get : los datos se enviaran como parametros de la URL-->
         <form action="review.html" method="get" class="form" id="reviewForm">
+           
             <div class="form-control">
                 <label for="product">Product Name:</label>
+               
                 <select id="product" name="product" required>
                     <option value="" disabled selected>Choose a Product... </option>
                 </select>
+
             </div>
             <div class="form-control">
                 <label>Overral Rating </label>
@@ -42,6 +45,7 @@
                     <label for="one">☆</label>
                 </div>
             </div>
+            
             <div class="form-control">
                 <label for="dateOfInstallation">Date of Installation</label>
                 <input type="date" id="dateOfInstallation" name="dateOfInstallation" required>

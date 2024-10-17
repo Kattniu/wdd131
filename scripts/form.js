@@ -29,8 +29,9 @@ const products = [
   
   // Llenar el select con los productos
   const productSelect = document.getElementById('product');
-  products.forEach(product => {
-      const option = document.createElement('option');
+
+  products.forEach(product => { //bucle forech para recorrer cada producto 
+      const option = document.createElement('option');//crea un nuevo elemento option
       option.value = product.id;  // Usamos el id del producto como valor
       option.textContent = product.name;  // Usamos el nombre del producto como texto
       productSelect.appendChild(option);
@@ -45,9 +46,11 @@ const products = [
   }
   
   // Añadir un evento al formulario para actualizar el contador
-  document.getElementById('reviewForm').addEventListener('submit', function() {
-      updateReviewCount(); // Llamar a la función para actualizar el contador
-  });
-  
+  document.getElementById('reviewForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene que el formulario se envíe inmediatamente
+    updateReviewCount(); // Actualiza el contador
+    this.submit(); // Luego permite el envío después de actualizar el contador
+});
+
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
