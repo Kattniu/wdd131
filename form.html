@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de Revisión de Producto">
+    <meta name="author" content="Katherine Gonzales">
+    <title>Prodcut Review</title>
+    
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <!--Este atributo especifica a la URL donde se enviaran los datos del formulario -->
+        <!--get : los datos se enviaran como parametros de la URL-->
+        <form action="review.html" method="get" class="form" id="reviewForm">
+            <div class="form-control">
+                <label for="product">Product Name:</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Choose a Product... </option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label>Overral Rating </label>
+                <div class="rating">
+                    <input type="radio" id="five" name="rating" value="5" required>
+                    <label for="five">☆☆☆☆☆</label>
+                    <input type="radio" id="four" name="rating" value="4" required>
+                    <label for="four">☆☆☆☆</label>
+                    <input type="radio" id="three" name="rating" value="3" required>
+                    <label for="three">☆☆☆</label>
+                    <input type="radio" id="two" name="rating" value="2" required>
+                    <label for="two">☆☆</label>
+                    <input type="radio" id="one" name="rating" value="1" required>
+                    <label for="one">☆</label>
+                </div>
+            </div>
+            <div class="form-control">
+                <label for="dateOfInstallation">Date of Installation</label>
+                <input type="date" id="dateOfInstallation" name="dateOfInstallation" required>
+            </div>
+
+
+            <fieldset class="form-control"> <!--Fieldset : agrupa y organiza campos en un formulario-->
+                <legend>
+                    Which features did you find useful in tbhe product? </legend>
+                <div>
+                    <input type="checkbox" id="durability" name="features" value="durabilidad">
+                    <label for="durability">Durability </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="easeOfUse" name="features" value="facilidadUso">
+                    <label for="easeOfUse">Ease of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="performance" name="features" value="rendimiento">
+                    <label for="performance">performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="design" name="features" value="diseño">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+
+
+            <div class="form-control"> <!--Label: se utiliza pafra definir una etiqueta | For: este atributo vinvula la etiqueta con un elemtno de entrada  -->
+                <label for="review">Written Review(opstional)</label>
+                <textarea id="review" name="review" rows="4" cols="50"></textarea> 
+                <!--Textarea: permite la entrada de texto en multiples lineas, ideal para mensajes largos -->
+            </div>
+
+
+            <div class="form-control">
+                <label for="userName">Your Name:</label>
+                <input type="text" id="userName" name="userName">
+                <!--type: text : permite la entrada de de texto simple 
+                Otro ejemplo de type ,  type ="password" :Permite la engtrada de texto pero oculta los caracteres( muestra punto o asteriscos)-->
+            </div>
+
+            <div class="form-control">
+                <input class="boton" type="submit" value="Post Review">
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 <span id="currentyear"> </span> Katherine Gonzales </p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
