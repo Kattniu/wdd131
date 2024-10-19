@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revisión Enviada</title>
+    <title>Review Submitted</title>
     <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <header>
-        <h1>Gracias por tu Revisión</h1>
+        <h1>Thank You for Your Review</h1>
     </header>
     <main>
-        <p>Tu revisión ha sido enviada con éxito.</p>
-        <p>Número total de revisiones enviadas: <span id="reviewCount"></span></p>
-        <a href="form.html">Regresar al formulario</a>
+        <p>Your review has been submitted successfully.</p>
+        <p>Total number of reviews submitted: <span id="reviewCount"></span></p>
+        <a href="form.html">Return to the form</a>
     </main>
     <footer>
-        <p>&copy; 2024 <span id="currentyear"> </span> Katherine Gonzales  </p>
+        <p>&copy; 2024 <span id="currentyear"> </span> Katherine Gonzales</p>
         <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
-    <script>
-        // Mostrar el contador de revisiones
-        document.getElementById('reviewCount').textContent = localStorage.getItem('reviewCount') || 0;
-    </script>
 </body>
 </html>

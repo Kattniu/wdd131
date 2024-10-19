@@ -8,12 +8,14 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f9f9f9;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 header {
+    background-color: var(--optionalcolor);
     text-align: center;
-    margin-bottom: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -25,7 +27,7 @@ h1 {
 
 .form {
     background: var(--background) ;
-    padding: 20px;
+    padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
@@ -63,21 +65,25 @@ input[type="checkbox"] {
 }
 
 .rating {
+
     display: flex;
 }
 
+
 input[type="submit"] {
-    background: #007bff;
+    background:#0056b3;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
     font-size: 16px;
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color al hacer hover */
 }
 
 input[type="submit"]:hover {
-    background: #0056b3;
+    background:yellowgreen;
 }
 
 footer {
