@@ -1,0 +1,79 @@
+/* siteplan.css */
+body {
+    background-color: rgb(215, 245, 247);
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; /* Default font for body */
+}
+
+main {
+    margin: 20px;
+}
+
+h1 {
+    color: #276eb5; /* Dark Blue for the main heading */
+    font-family: 'Afacad Flux', sans-serif;
+    text-align: center;
+    font-size:larger;
+}
+
+h2{
+    color: rgb(32, 89, 145);
+    text-align: center;
+    font-family: 'Afacad Flux', sans-serif;
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+section{
+    padding: 20px;
+    margin: 20px;
+    background-color: #FFFFFF;
+}
+
+.primary {
+    color: white;
+    background-color: #003366;
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.secondary {
+    background-color: #CCCCCC;
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.botones {
+    background-color: #FFFFFF;
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.text {
+    color: white;
+    background-color: #000000;
+    padding: 10px; /* Add padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+}
+footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #003366; /* Cambia el color de fondo aquí */
+    color: white; /* Cambia el color del texto */
+    padding: 15px; /* Añadir espacio dentro del footer */
+}
+
+.image-container {
+    text-align: center; /* Center the image */
+}
+
+.image-container img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #003366; 
+    border-radius: 10px; /*Esquinas curvas*/
+} 
+        
