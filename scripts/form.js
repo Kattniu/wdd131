@@ -57,17 +57,15 @@ document.getElementById('dateOfInstallation').max = new Date().toISOString().spl
 
 
 document.getElementById('reviewForm').addEventListener('submit', function(event) {
-  const dateOfInstallation = document.getElementById('dateOfInstallation').value;
-  const selectedDate = new Date(dateOfInstallation);
-  const today = new Date();
+    const dateOfInstallation = document.getElementById('dateOfInstallation').value;
+    const selectedDate = new Date(dateOfInstallation);
+    const today = new Date();
 
-  if (selectedDate > today) {
-      alert("The installation date cannot be in the future.");
-      event.preventDefault();
-  }
+    if (selectedDate > today) {
+        alert("The installation date cannot be in the future.");
+        event.preventDefault();
+    }
 });
-
-document.getElementById('reviewCount').textContent = localStorage.getItem('reviewCount') || 0;
 
 document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
