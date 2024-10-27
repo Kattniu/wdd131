@@ -1,0 +1,286 @@
+
+:root {
+    --background-image:linear-gradient(43deg, #4158D0 23%, #C850C0 66%, #FFCC70 97%);
+    --background-color: #192a7d;
+    --background-color2: #211f37;
+    --primary-color: #003366;
+    --primary-color2:#555;
+    --secondary-color:#cccccc;
+    --accent-color: white;
+    --text-color2:#7f38a8;
+    --text-color: black;
+    --font-family: 'Afacad Flux', sans-serif;
+}
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+
+}
+
+/* Encabezado (header) */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+
+}
+
+nav ul li a {
+
+    color: var(--accent-color);
+    text-decoration: none;        
+    }
+
+#hamburger {
+    font-size: 20px;
+    display: none; /* Solo visible en pantallas pequeñas */
+
+}
+
+.search-bar input {
+    padding: 5px;
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color:var(--primary-color2);
+    color: var(--accent-color);
+    border: none;
+    cursor: pointer;
+}
+
+.user-icon span {
+        font-size: 24px;
+}
+
+/* Estilos generales para la sección "About Us" */
+.about-us {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 50%;
+    margin: 20px auto;
+}
+
+/* Texto dentro de "About Us" */
+.about-us h1 {
+    font-size: 2rem;
+}
+
+.about-us p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Imagen dentro de la clase "hero" */
+.hero img {
+    max-width: 100%; /* Para que la imagen ocupe el ancho completo del contenedor */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 8px;
+}
+
+/* Contenedor principal del contenido */
+main.container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 10px;
+    padding: 40px;
+    flex-direction: row; /* Distribuir en filas para pantallas grandes */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color2);
+    color: var(--secondary-color);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/*---------------------------------------------------------------Introduction*/
+.main-intro {
+    padding: 3rem; /* Añade espacio alrededor del contenido */
+    max-width: 900px; 
+    margin: 0 auto; /* Centra horizontalmente el contenido */
+    background-color: var(--background-color2); /* Fondo suave para el área principal */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar el contenido */
+    text-align: center; /* Centra el texto */
+}
+
+.title-intro {
+    font-size: 2.5rem; /* Tamaño de fuente más grande para el título */
+    color: var(--text-color2);
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+}
+
+.main-intro img {
+    display: block;
+    padding: 20px;
+    margin: 1.5rem auto; /* Centra la imagen horizontalmente y añade espacio */
+    border-radius: 10px; /* Bordes redondeados de la imagen */
+}
+
+.main-intro p {
+    font-size: 1.1rem; /* Aumenta un poco el tamaño de la fuente del párrafo */
+    line-height: 1.6; /* Mejora la legibilidad con mayor separación entre líneas */
+    color: var(--secondary-color); /* Texto de color gris suave */
+    margin-bottom: 3rem; /* Añade espacio entre párrafos */
+    text-align: justify; /* Justifica el texto para una mejor presentación */
+}
+/*---------------------------------------------------------Benefits*/
+.main-benefits{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.main-benefits section{
+    background-color: rgba( 255, 255, 255, 0.8);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.main-benefits h1{
+    font-size: 3rem;
+    text-align: center;
+
+}
+/*---------------------------------------------------------------innovation*/
+.main-innovation {
+    padding: 20px;
+    color: var(--text-color);
+}
+.main-innovation h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--text-color2);
+}
+
+.ai-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.project {
+    background-color: #fff; /* Fondo blanco para los artículos */
+    padding: 15px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde sutil alrededor de los artículos */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Asegura que los artículos ocupen todo el ancho */
+    max-width: 800px; /* Limita el ancho máximo de los artículos */
+    text-align: center; /* Centra el texto de los artículos */
+}
+.project h2 {
+    font-size: 1.5em;
+    color: #2c3e50;
+    text-align: center;
+   
+}
+
+.project p {
+    color: #34495e;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/*-----------------------------------------------------------*/
+
+/* Media queries para pantallas más pequeñas (móviles y tablets) */
+@media (max-width: 1000px) {
+    nav ul {
+        display: none; /* Ocultar el menú en pantallas pequeñas */
+    }
+    
+
+    #hamburger {
+        display: block; /* Mostrar el menú hamburguesa en pantallas pequeñas */
+        transition: trasform 0.5s ease;
+        cursor: pointer;
+
+    }
+    #nav-menu.show {
+        display:flex;
+    }
+    #nav-menu{
+        display: none;
+        flex-direction: column;
+        background-color: #453d63;
+        position: absolute;
+        top: 40px;
+        width: 60%;
+        text-align: left;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para hacerlo más atractivo */
+        transition: all 0.3s ease; /* Animación suave */
+        z-index: 1;
+    }
+
+    /* Hover para cambiar el color de fondo de los enlaces */
+    #nav-menu li a:hover {
+    background-color: #b6b5c4;
+    color: #f4f4f4;
+    border-radius: 5px;
+    }
+
+    #nav-menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 10px;
+        display: block;
+        transition: background-color 0.3s ease; /* Suaviza el cambio de color de fondo */
+    }
+
+    main.container {
+        flex-direction: column; /* Cambiar a columnas para pantallas pequeñas */
+        align-items: center; /* Centrar los elementos en columnas */
+    }
+
+    .about-us {
+        max-width: 100%; /* Asegurarse de que el texto ocupe el ancho completo */
+        padding: 15px;
+    }
+
+    .hero img {
+        width: 100%; /* La imagen también será completamente responsiva */
+    }
+}
