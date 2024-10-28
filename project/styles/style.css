@@ -173,9 +173,26 @@ footer p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .main-benefits h1{
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
+    margin: 20% 0;
+    color:var(--background-color)
 
+}
+.hero-benefits{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero-benefits img{
+    max-width: 100%;
+    padding: 10px;
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    transition: transform 0.3s; /* Animación para el efecto hover */
+}
+.hero-benefits img:hover {
+    transform: scale(1.05); /* Escala la imagen al pasar el mouse */
 }
 /*---------------------------------------------------------------innovation*/
 .main-innovation {
