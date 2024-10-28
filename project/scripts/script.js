@@ -1,4 +1,17 @@
+//MENU HAMBURGER
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
 
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show'); 
+});
+
+// FOOTER
+document.getElementById('currentyear').textContent = new Date().getFullYear();
+document.getElementById('lastModified').textContent = document.lastModified;
+
+//La barra de busqueda 
 const searchBar = document.querySelector('.search-bar input');
 const projectArticles = document.querySelectorAll('.project');
 
@@ -10,6 +23,7 @@ searchBar.addEventListener('input', () => {
     });
 });
 
+//PARA LAS IMAGENES
 window.addEventListener('scroll', () => {
     const projects = document.querySelectorAll('.project');
     projects.forEach((project) => {
@@ -23,17 +37,20 @@ window.addEventListener('scroll', () => {
     });
 });
 
+//BOTTOM  para deslizar hacia arriba
+// Seleccionar el botón "Back to Top"
+const backToTopButton = document.querySelector('.back-to-top');
 
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-
-
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('show'); 
+// Escuchar el evento de scroll
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) { // Mostrar el botón cuando el usuario baja más de 300px
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
 });
 
-
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-
-
-document.getElementById('lastModified').textContent = document.lastModified;
+// Opcional: Evento para volver al inicio al hacer clic en el botón
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

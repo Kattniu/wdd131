@@ -5,8 +5,9 @@
     }
 
     header {
-        padding: 20px 40px;
+        padding: 30px 60px;
         font-family:Arial, Helvetica, sans-serif;
+        justify-content: space-around;
     }
 
     nav ul li {
@@ -40,6 +41,16 @@
         padding:6%;
     
     }
+    .main-intro, .main-benefits section {
+        padding: 50px 80px;
+        margin: 30px auto;
+    }
+    .main-benefits {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+        
 
     .hero img {
         width: 100%; /* Reducir el tamaño de la imagen en pantallas grandes */
@@ -48,4 +59,9 @@
     footer {
         font-size: 1.2rem;
     }
+    footer p, .main-benefits h2, .main-intro h2 {
+        font-size: 1.3rem;
+    }
+    
+
 }
