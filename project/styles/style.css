@@ -212,7 +212,7 @@ footer p {
     align-items: center;
 }
 .project {
-    background-color: #fff; /* Fondo blanco para los artículos */
+    background-color: var(--accent-color); /* Fondo blanco para los artículos */
     padding: 15px; /* Espaciado interno */
     border: 1px solid #ddd; /* Borde sutil alrededor de los artículos */
     border-radius: 10px; /* Esquinas redondeadas */
@@ -223,7 +223,7 @@ footer p {
 }
 .project h2 {
     font-size: 1.5em;
-    color: #2c3e50;
+    color:var(--primary-color2);
     text-align: center;
    
 }
@@ -305,12 +305,12 @@ footer p {
     /* Hover para cambiar el color de fondo de los enlaces */
     #nav-menu li a:hover {
     background-color: #b6b5c4;
-    color: #f4f4f4;
+    color:var(--accent-color);
     border-radius: 5px;
     }
 
     #nav-menu li a {
-        color: white;
+        color:var(--accent-color);
         text-decoration: none;
         font-size: 1.2rem;
         padding: 10px;
