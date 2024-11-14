@@ -1,5 +1,5 @@
 /* Media queries para pantallas grandes */
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
     body {
         font-size: 18px; /* Ajustar el tamaño de la fuente en pantallas grandes */
     }
@@ -33,6 +33,7 @@
             display: block;
             transition: background-color 0.3s ease; /* Suaviza el cambio de color de fondo */
         }
+        
     .about-us h1 {
             font-size: 3rem;
         }
